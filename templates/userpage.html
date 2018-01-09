@@ -1,12 +1,12 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1>Blogs</h1>
+    <h1>User Blogs</h1>
     
     <form method='get'>
 
     <ul>
-        {% for blog in blogs %}
+        {% for blog in user_works %}
         <li>
             <a id='blog-id' href="/readblog?blog_id={{blog.id}}"><h2>{{blog.title}}</h2></a>
             <a id='user-id' href="/userpage?user_id={{blog.owner_id}}"><h2>Written by {{blog.owner.username}}</h2></a>

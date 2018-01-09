@@ -4,6 +4,7 @@
     
 
         <h2>{{blog.title}}</h2>
+        <a id='user-id' href="/userpage?user_id={{blog.owner_id}}"><h2>Written by {{blog.owner.username}}</h2></a>
         <p>{{blog.body}}</p>
 
 {% endblock %}
